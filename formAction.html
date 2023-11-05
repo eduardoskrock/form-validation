@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema para loja de carros</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        
+        <div id="logo">
+            <a href="">
+                <img src="img/logo.png" alt="">
+            </a>
+        </div>
+
+        <nav id="menu">
+            <ul>
+                <li><a href="./index.html" class="texto-padrao">Página inicial</a></li>
+                <li><a href="./form.html" class="texto-padrao">Cadastre-se</a></li>
+                <li><a href="formAction.html" class="destaque">Seu cadastro</a></li>
+                <li><a href="./about.html" class="texto-padrao">Sobre</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <script src="script/script.js"></script>
+    <section class="secao formAction">
+
+        <h1 class="titulo">Dados de Contato</h1>
+
+        <table class="tableCSS">
+            <p>Os valores inseridos na aba "Cadastre-se" aparecerão aqui ao serem enviados!</p>
+            <tr><th>Dados</th><th>Resposta</th></tr>
+            <script language=javascript>
+                var params = new Array();
+                params = getParameters();
+                for (let [key, value] of Object.entries(params)) {
+                    document.write("<tr><th>" + key + "</th><td>" + value + "</td></tr>");
+                }
+            </script>
+        </table>
+    </section>

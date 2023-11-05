@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema para loja de carros</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        
+        <div id="logo">
+            <a href="">
+                <img src="img/logo.png" alt="">
+            </a>
+        </div>
+
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html" class="texto-padrao">Página inicial</a></li>
+                <li><a href="form.html" class="destaque">Cadastre-se</a></li>
+                <li><a href="formAction.html" class="texto-padrao">Seu cadastro</a></li>
+                <li><a href="about.html" class="texto-padrao">Sobre</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <section class="secao primeira form">
+
+            <div class="lado-esquerdo form">
+                <h1 class="titulo">Faça seu cadastro!<br><span class="destaque-cor">Comece a vender mais!</span></h1>
+            </div>
+            <div class="lado-direito form">
+                <h3>Registre seus dados!</h3>
+                <form method="GET" action="formAction.html" >
+                    <div class="card-forms">
+                        <label for="nome" class="titulo-form" aria-hidden="true">Seu nome completo</label>
+                        <input type="text" class="input-form" name="Nome" placeholder="Ex: Eduardo Felipe" pattern="[A-Za-záàâãéèêíóôõúç\s]{8,50}" title="Nome com 8 a 50 letras" required>
+
+                        <label for="email" class="titulo-form" aria-hidden="true">Sua caixa de e-mail mais querida</label>
+                        <input type="email" class="input-form" name="E-mail" placeholder="Ex: eduardo123@gmail.com" required>
+
+                        <label for="celular" class="titulo-form" aria-hidden="true">Seu número de celular</label>
+                        <input type="phone" id="celular" class="input-form" name="Celular" pattern="\(\d{2}\)\s\d{4,5}-\d{4}$" onkeydown="return mascaraTelefone(event)" placeholder="Seu celular" title="(xx) xxxxx-xxxx" required>
+
+                        <label for="nascimento" class="titulo-form" aria-hidden="true">Sua data de nascimento</label>
+                        <input type="date" class="input-form" name="Nascimento">
+
+                        <label for="agree-term" class="titulo-form" aria-hidden="true"><span><span></span></span>Eu concordo com os <a href="#" class="term-service">termos de serviço</a></label>
+                        <input type="checkbox" name="Termo" class="input-form checkbox" required >
+
+                        <input type="submit" id="submit-form" name="Enviar?" placeholder="Enviar">
+
+                        <input type="reset" id="reset-form" name="Resetar">
+                    </div>
+                </form>
+            </div>  
+        </section>
+    </main>
+    <script src="script/script.js"></script>
+</body>
+</html>

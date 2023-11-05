@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body{
+    margin: 0 auto;
+    color: rgb(83, 83, 83);
+}
+
+/*Aqui começa o cabeçalho padrão de todas as páginas*/
+
+header{
+    display: flex;
+    padding: 2rem;
+    justify-content: space-between;
+    background: #2525f0;
+    box-shadow: 0 4px 6px -3px rgba(0, 0, 0, 0.5);
+}
+
+#logo{
+    display: flex;
+    align-items: center;
+}
+
+/**/
+#menu > ul {
+    display: flex;
+    gap: 2rem;
+    list-style-type: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*aplica um efeito e altera o peso da fonte ao passar o mouse em cima do cabeçalho, no nome da aba do site*/
+li:hover{
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/*configuração do atibuto "link" do cabeçalho*, para destacar o peso da fonte correspondente a aba*/
+.destaque{
+    font-weight: 700;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+/*configuração do atibuto "link" do cabeçalho*, para a fonte ficar normal */
+
+.texto-padrao{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+
+/*Aqui termina o cabeçalho*/
+
+/*Aqui começa a primeira seção, que no nosso caso é o "Hero"*/
+.secao{
+    padding: 3rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sessao.primeira{
+    display: flex;
+    width: 100%;
+}
+
+.secao.primeira.form{
+    display: flex;
+}
+
+.titulo{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+}
+.destaque-cor{
+    color: rgb(37, 37, 240);
+}
+.lado-esquerdo, .lado-direito{
+    width: 50%;
+}
+
+.lado-esquerdo.form{
+    width: 40%;
+}
+
+#botao-cadastro{
+    padding: 1rem;
+    border-radius: 20px;
+    border: none;
+    background: rgb(37, 37, 240);
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#botao-cadastro:hover{
+    background: rgb(80, 80, 235);
+    transition: .3s;
+}
+
+#botao-sobre{
+    padding: .8rem;
+    border-radius: 20px;
+    background: transparent;
+    border: 3px solid rgb(83, 83, 83);
+    font-size: 1rem;
+    font-weight: 400;
+    color:  rgb(83, 83, 83);
+    cursor: pointer; 
+}
+
+/*Aqui começa a segunda seção, logo abaixo do "hero"*/
+.secao.segunda{
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.lado-esquerdo.segunda{
+    width: 30%;
+}
+
+.lado-direito.segunda{
+    width: 70%;
+}
+
+.cards{
+    display: flex;
+    padding: .5rem;
+    justify-content: end;
+    gap: 2rem;
+}
+
+.card{
+    padding: .8rem;
+    width: 20%;
+    background: rgb(243, 243, 248);
+    border-radius: 20px;
+    padding: .8rem;
+    color: rgb(83, 83, 83);
+}
+
+.card-forms{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+input::placeholder{
+    font-size: 1.2rem;
+    color: rgb(153, 153, 153);
+}
+
+.titulo-form{
+    margin-top: 1rem;
+    font-weight: 700;
+}
+
+.lado-direito.form{
+    display: flex;
+    flex-direction: column;
+    background: #f0f0f0;
+    padding: 3rem;
+    border-radius: 20px;
+}
+
+.input-form{
+    padding: .5rem;
+    width: 80%;
+    height: 2rem;
+    background: rgb(224, 224, 224);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+}
+
+.input-form:focus{
+    border: 3px solid rgb(37, 37, 240);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    background: #f5f5f5;
+}
+
+.input-form.checkbox{
+    display: flex;
+    width: 25px;
+    position: relative;
+    top: 0%;
+}
+
+
+#submit-form{
+    padding: .9rem;
+    width: 100%;
+    border-radius: 10px;
+    background: rgb(68, 228, 140);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-weight: 700;
+    color: rgb(223, 223, 223);
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+#submit-form:hover{
+    background-color: rgb(39, 194, 109);
+}
+
+
+#reset-form{
+    padding: .9rem;
+    width: 100%;
+    border-radius: 10px;
+    background: rgb(173, 173, 173);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-weight: 700;
+    color: rgb(223, 223, 223);
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+#reset-form:hover{
+    background: rgb(107, 107, 107);
+}
+
+table.tableCSS {
+    background-color: rgb(214, 214, 214);
+    text-align: left;
+    padding: 1rem;
+    width: 50%;
+    font-size: medium;
+    border-radius: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+table.tableCSS td {
+    border: 5px;
+    padding: 1rem;
+    border-bottom: 2px solid #2525f0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+table.tableCSS th {
+    background-color: #2525f0;
+    border-radius: 5px;
+    height: 30px;
+    color: rgb(238, 238, 238);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.secao.formAction{
+    display: flex;
+    flex-direction: column;
+}
